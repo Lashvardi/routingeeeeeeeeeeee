@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeGeoComponent } from './home-geo/home-geo.component';
 import { HomeEngComponent } from './home-eng/home-eng.component';
 import { ErrorComponent } from './error/error.component';
+import { DetailsComponent } from './details/details.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ErrorComponent } from './error/error.component';
     NavbarComponent,
     HomeGeoComponent,
     HomeEngComponent,
-    ErrorComponent
+    ErrorComponent,
+    DetailsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeGeoComponent } from './home-geo/home-geo.component';
 import { HomeEngComponent } from './home-eng/home-eng.component';
 import { ErrorComponent } from './error/error.component';
+import { DetailsComponent } from './details/details.component';
 
 // როუტების მასივი (მისამართების მასივი)
 const routes: Routes = [
@@ -19,6 +20,12 @@ const routes: Routes = [
   {
     path: 'home/eng',
     component: HomeEngComponent,
+  },
+  // გვესაჭიროება უნივერსალური როუთი რომელიც მიიღებს
+  // პარამეტრს ამას Query Param-ეწოდება
+  {
+    path: 'details/:id', // პარამეტრების რაოდენობა შეზღუდული არ არის
+    component: DetailsComponent,
   },
   // wildcard route **
   {
